@@ -1,0 +1,17 @@
+<ion-modal-view class="product edit create">
+
+  <ion-header-bar class="bar-positive fix-buttons">
+    <a class="button" ng-click="findbuddypage()">Back</a>
+    <h1 class="title">Location </h1>
+  </ion-header-bar>
+
+  <!-- <ion-content has-bouncing="true">
+
+    <div id="map" data-tap-disabled="true">
+    <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map></div>
+  </ion-content> -->
+  <ion-pane ng-controller="mapCtrl">
+    <div id="map" data-tap-disabled="true"></div>
+</ion-pane>
+
+</ion-modal-view>

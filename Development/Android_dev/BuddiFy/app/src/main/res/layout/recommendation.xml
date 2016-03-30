@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        android:gravity="center"
+        android:id="@+id/relativeLayout_banner">
+
+        <ImageView
+            android:id="@+id/imgview_recomBanner"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/rockhaus"
+            android:adjustViewBounds="true"/>
+
+        <Button
+            android:id="@+id/info_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/icon_info"
+            android:layout_alignTop="@+id/location_button"
+            android:layout_toStartOf="@+id/location_button" />
+
+        <Button
+            android:id="@+id/location_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/icon_location"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recom_venue_name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:layout_marginLeft="13dp"
+            android:layout_alignTop="@+id/info_button" />
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/scroller_recom_venue_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="50dp"
+        android:scrollbars="vertical"
+        android:fillViewport="true">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/recom_venue_text"
+            android:id="@+id/textView_recom_venue_text"
+            android:layout_marginLeft="7dp"
+            android:textSize="20dp"/>
+
+    </ScrollView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recom_buttonText_anotherPlace"
+            android:textColor="@color/red"
+            android:id="@+id/button_anotherPlace"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recom_buttonText_goThere"
+            android:id="@+id/button"
+            android:textColor="@color/green"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/button_anotherPlace"
+            android:layout_alignEnd="@+id/scroller_recom_venue_text" />
+
+        <!--
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:attr/textAppearanceLarge"
+           android:text="@string/recom_title"
+           android:id="@+id/textView_recom_titles"
+           android:textColor="@color/red"
+           android:textStyle="bold"
+           android:textSize="35dp"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true" />
+        -->
+
+</RelativeLayout>

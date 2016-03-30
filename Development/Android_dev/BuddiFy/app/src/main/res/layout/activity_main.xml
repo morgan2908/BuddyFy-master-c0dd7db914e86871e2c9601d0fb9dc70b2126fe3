@@ -1,0 +1,62 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/startscreen"
+    tools:showIn="@layout/content_main">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/buddify_logo"
+        android:layout_marginTop="40dp"
+        android:layout_gravity = "center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Change the way you meet people"
+        android:id="@+id/textView2"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:paddingTop="10dp"
+        android:paddingBottom="25dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:id="@+id/btn_login"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_button"
+        android:onClick="open_create_account_page"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity = "center"/>
+
+    <Button
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:id="@+id/btn_sign_in"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_button"
+        android:onClick="open_sign_in_page"
+        android:layout_gravity = "center"/>
+
+
+
+</LinearLayout>

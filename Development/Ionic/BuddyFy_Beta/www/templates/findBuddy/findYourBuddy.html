@@ -1,0 +1,84 @@
+<ion-view>
+  <ion-header-bar class="bar-positive">
+    <h1 class="title">Find your Buddy</h1>
+    <div class="buttons">
+      <!-- <button class="button button-clear" ui-sref="app.home">Back</button> -->
+      <button class="button button-clear" ng-click="findbuddypage()">Back</button>
+    </div>
+  </ion-header-bar>
+
+  <ion-content class="findBuddy-content">
+
+    <div class="list card animated bounceInLeft ">
+
+      <div class="item item-button-right">
+        <label>{{activityText}}</label>
+        <button class="button" ng-click="openModalListActivity()">
+          <i class="icon ion-android-menu"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="list card animated bounceInLeft" >
+      <div class="item item-button-right"  >
+        <label>{{moodText}}</label>
+        <button class="button" ng-click="openModalListMood()" ng-disabled="selectedActivityID == 0">
+          <i class="icon ion-android-menu"></i>
+        </button>
+      </div>
+    </div>
+      <!-- <div class="item item-button-right itembuttonbuddy">
+        <option value="">Enter your own location</option>
+        <button class="button">
+          <i class="icon ion-search placeholder-icon"></i>
+        </button>
+      </div> -->
+    <div class="list card animated bounceInLeft">
+      <div class="item item-input-inset ">
+
+        <label class="item-input-wrapper">{{locationName}}<br>{{locationAdr}}</label>
+
+        <button class="button button-small">
+          <i class="icon ion-android-search"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="list card animated bounceInLeft ">
+
+
+        <ionic-datepicker input-obj="datepickerObject">
+          <label class="item-input">When are you going there?  <button class="button button-small">
+              <i class="icon ion-calendar"></i>
+            </button></label>
+        </ionic-datepicker>
+
+
+
+    </div>
+
+
+
+
+
+
+    </div>
+
+    <!-- <ionic-datepicker date="currentDate" min="minDate" max="maxDate" callback="datePickerCallback">
+    <button class="button button-block button-positive"> {{ currentDate | date:'MMMM/dd/yyyy' }} </button>
+    </ionic-datepicker> -->
+
+
+    <button class="button button-positive findbuddybutton rounded-buttonfb animated fadeInUpBig" >
+      Find Buddy
+    </button>
+
+
+
+
+    <!-- <button class="button button-full button-positive" ng-click="login()">Login with Facebook</button> -->
+
+
+
+  </ion-content>
+</ion-view>

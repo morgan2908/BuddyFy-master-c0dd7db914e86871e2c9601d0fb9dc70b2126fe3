@@ -1,0 +1,32 @@
+<ion-view > <--class="findBuddy-content"-->
+
+  <ion-header-bar class="bar-positive">
+    <h1 class="title">Other Venues</h1>
+    <div class="buttons">
+      <!-- <button class="button button-clear" ui-sref="app.home">Back</button> -->
+      <button class="button button-clear" ng-click="findbuddypage()">Back</button>
+    </div>
+  </ion-header-bar>
+
+  <ion-content >
+
+    <!--<div class="card" ng-repeat="venue in venues">-->
+      <!--<div class="item item-divider">Place of Meeting</div>-->
+      <!--<div class="row row-center">-->
+        <!--<div class="col">Test</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <div class="list">
+
+      <a class="item item-thumbnail-left" href="#"  ng-repeat="venue in venues" ng-click="indexOfSelectedVenueID()">
+        <img src={{venue.img}}>
+        <h2>{{venue.name}}</h2>
+        <p>{{venue.venueDescription}}</p>
+      </a>
+
+    </div>
+
+
+
+  </ion-content>
+</ion-view>

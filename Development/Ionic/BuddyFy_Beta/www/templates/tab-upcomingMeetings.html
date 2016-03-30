@@ -1,0 +1,54 @@
+<ion-view title = "BuddiFy (logo)" hide-back-button="true">
+        <ion-header-bar class="bar">
+
+
+        </ion-header-bar>
+
+
+
+
+        <ion-content>
+
+          <div class="button card card-meeting_bg "  ng-repeat="key in yourMeetings track by key.id" ng-href="#/app/{{key.id}}">
+
+              <div class="row">
+                <div class="col">
+                  <h3 class="title_white">21/02/2016</h3>
+                  <h3 class="title_white">{{key.venue}}</h3>
+                  <h3 class="title_white">Test</h3>
+                  <p class="title_white">{{key.meeting_type}} at {{key.location}} </p>
+                </div>
+              </div>
+
+          </div>
+
+          <!-- <div class="card card-meeting" ng-repeat="key in yourMeetings track by key.id" ng-href="#/app/{{key.id}}">
+            <div class="item item-text-wrap">
+              <h3>{{key.meeting_type}} at {{key.venue}}</h3>
+              <h4>{{key.time}} at {{key.location}} </h4>
+            </div>
+          </div> -->
+
+              <!-- <a class="item item-avatar" ng-repeat="key in yourMeetings track by key.id" ng-href="#/app/{{key.id}}"  >
+                <img src="img/prezzo.jpg" />
+                <h3>{{key.meeting_type}} at {{key.venue}}</h3>
+                <h4>{{key.time}} at {{key.location}} </h4>
+              </a> -->
+
+       </ion-content>
+
+
+
+
+       <div class="findBuddyPosition">
+         <button class="button-rounded" ui-sref="app.findBuddy">
+           BuddyFy
+         </button>
+      </div>
+
+
+
+
+
+
+</ion-view>

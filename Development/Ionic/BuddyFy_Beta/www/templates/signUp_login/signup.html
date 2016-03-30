@@ -1,0 +1,224 @@
+<!--<ion-pane class="signup-content">-->
+
+
+  <!--<ion-header-bar class="bar-stable">-->
+    <!--<h1 class="title">BuddiFy</h1>-->
+  <!--</ion-header-bar>-->
+
+
+
+  <!--<ion-content>-->
+
+
+
+    <!--<ion-slide-box>-->
+
+      <!--<ion-slide>-->
+
+        <!--<form ng-submit="doLogin()">-->
+
+          <!--<div class="list">-->
+            <!--<label class="item item-input item-floating-label">-->
+              <!--<span class="input-label">Email</span>-->
+              <!--<input type="text" placeholder="Email" ng-model="loginData.email">-->
+            <!--</label>-->
+            <!--<label class="item item-input item-floating-label">-->
+              <!--<span class="input-label">Password</span>-->
+              <!--<input type="password" placeholder="Password" ng-model="loginData.password">-->
+            <!--</label>-->
+
+              <!--<button class="button button-block button-positive" type="submit">Log in </button>-->
+          <!--</div>-->
+        <!--</form>-->
+
+      <!--</ion-slide>-->
+
+
+      <!--<ion-slide>-->
+
+        <!--<button class="button button-block button-positive" type="submit" ng-click="loginWithFacebook()">Register with Facebook</button>-->
+
+      <!--</ion-slide>-->
+
+    <!--</ion-slide-box>-->
+
+  <!--</ion-content>-->
+
+<!--</ion-pane>-->
+
+
+
+<!--"- "-->
+<!--
+<ion-view view-title="BuddiFy" >
+
+  <ion-header-bar class="bar-stable">
+  <h1 class="title">{{headername}}</h1>
+
+  </ion-header-bar>
+
+
+
+  <ion-content scroll="true">
+
+
+
+    <ion-slide-box on-slide-changed="activateTabs($index)" show-pager="false">
+      <ion-slide >
+
+        <form ng-submit="doLogin(theform.$valid)" name="logindata">
+
+        <div class="list">
+        <label class="item item-input item-floating-label">
+        <span class="input-label">Email</span>
+        <input type="text"
+               placeholder="Email"
+               ng-model="loginData.email"
+               required="required">
+        </label>
+        <label class="item item-input item-floating-label">
+        <span class="input-label">Password</span>
+        <input type="password"
+               placeholder="Password"
+               ng-model="loginData.password"
+               required="required">
+        </label>
+
+        <button class="button button-block button-positive"
+                type="submit">Log in </button> -->
+          <!--<pre>{{logindata | json}}</pre>-->
+        <!-- </div>
+        </form>
+
+      </ion-slide>
+      <ion-slide>
+
+        <form ng-submit="doLogin()">
+          <div class="list">
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Name</span>
+
+              <input type="text"
+                     placeholder="Name"
+                     ng-model="newUser.name"
+                     required="required">
+            </label>
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Username or Email</span>
+
+              <input type="text"
+                     placeholder="Username or Email"
+                     ng-model="newUser.email"
+                     required="required">
+            </label>
+            <label class="item item-input item-floating-label">
+
+              <span class="input-label">Password</span>
+              <input type="password"
+                     placeholder="Password"
+                     ng-model="newUser.password"
+                     required="required">
+            </label>
+
+              <button class="button button-block button-positive" type="submit" ng-click="register()">Register </button>
+
+          </div>
+        </form>
+
+        <button class="button button-block button-positive" type="submit" ng-click="loginWithFacebook()">Register with Facebook</button>
+      </ion-slide>
+    </ion-slide-box>
+
+
+    <div class="button-bar">
+      <a ng-repeat="button in buttons"
+         ng-class="{'active': $index === current}"
+         ng-click="slide($index)"
+         class="button button-stable">{{ button.name }}
+      </a>
+    </div>
+
+  </ion-content>
+
+</ion-view> -->
+
+<ion-view class="auth-view" cache-view="false">
+  <ion-nav-bar class="view-navigation">
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+  </ion-nav-bar>
+  <ion-content class="padding">
+    <div class="row form-heading">
+      <div class="col">
+        <h1 class="form-title">Create your account</h1>
+        <h3 class="form-sub-title">Sign up with Social Network or Email</h3>
+        <div class="social-sign-up button-bar">
+          <a class="button icon ion-social-facebook button-positive" ng-click="signUpWithFacebook()"></a>
+          <a class="button icon ion-social-twitter button-calm"></a>
+        </div>
+      </div>
+    </div>
+    <div class="row form-separator">
+      <hr class="separator-line"/>
+      <span class="separator-mark">OR</span>
+      <hr class="separator-line"/>
+    </div>
+    <div class="row form-wrapper">
+
+      <div class="col">
+        <form name="signup_form" ng-submit="doLogin()" novalidate>
+          <div class="form-fields-outer list list-inset">
+            <div class="row multi-inputs">
+              <div class="col">
+                <label class="item item-input">
+                  <input  class="multi-input"
+                          type="text"
+                          placeholder="Name"
+                          name="name"
+                          ng-model="newUser.name">
+                </label>
+              </div>
+
+              <div class="col">
+                <label class="item item-input">
+                  <input  class="multi-input"
+                          type="text"
+                          placeholder="Username"
+                          name="username"
+                          ng-model="newUser.userName">
+                </label>
+              </div>
+            </div>
+
+            <label class="item item-input">
+              <input  type="email"
+                      placeholder="Email"
+                      name="email"
+                      ng-model="newUser.email">
+            </label
+            >
+            <label class="item item-input">
+              <input  type="tel"
+                      placeholder="Phone Number"
+                      name="phone"
+                      ng-model="newUser.phone">
+            </label>
+
+            <label class="item item-input" show-hide-container>
+              <input  type="password"
+                      placeholder="Password"
+                      name="password"
+                      ng-model="newUser.password"
+                      required show-hide-input>
+            </label>
+
+            <button type="submit" class="sign-up button button-block" ng-click="register()" ng-disabled="signup_form.$invalid">
+              Sign Up
+            </button>
+            <p ng-show="error" class="message error">{{error}}</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

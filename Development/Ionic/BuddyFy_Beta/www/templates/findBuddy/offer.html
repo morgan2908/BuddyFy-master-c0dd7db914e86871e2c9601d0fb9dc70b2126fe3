@@ -1,0 +1,96 @@
+
+<ion-modal-view>
+
+  <ion-header-bar align-title="center" class="product-header" style="background: url({{offer.cover}}) no-repeat; height: 240px;background-size: cover;">
+    <div style="position: absolute; width: 100%; text-align: center;"><h4 style="color: white;">Our Recommendation </h4></div>
+    <div style="position: relative; margin-left: auto; margin-right: 1em;">
+      <button class="button button-clear button-icon icon ion-android-close" ng-click="closeModalOffer()"></button>
+      <!--<button class="button button-clear ion-android-pin" style="top: 142px; left: 3px;" ng-click="openMap()">-->
+      <button class="button button-clear ion-android-pin" style="top: 142px; left: 3px;" ><a  href="geo://0,0?q=dallas" data-rel="external" > Map</button>
+
+      <button class="button button-clear ion-information-circled " ng-click="GoToOfferWebsite()"style="top:109px; right: 35px;" >
+
+
+    </div>
+
+    <div class="product-name" >
+      <h2 style="color: white;">{{offer.name}}</h2>
+
+    </div>
+    <div class="product-like">
+      <button class="button button-clear" ng-click="doLike()">
+        <i class="ion-heart"></i>
+      </button>
+    </div>
+
+  </ion-header-bar>
+
+
+  <ion-pane class="header-background">
+
+    <form>
+      <!--<div class="product-header" style="background: url({{offer.cover}}) no-repeat; height: 240px;background-size: cover;">-->
+
+      <!--</div>-->
+
+
+      <ion-scroll direction="y" style="position:absolute; top: 245px; height:51%; width:100%;" >
+        <div class="product-body">
+          {{offer.info}}
+        </div>
+      </ion-scroll>
+
+
+
+
+      <div class="bar bar-footer">
+        <div class="button-bar">
+          <button class="button button-assertive" ng-click ="openVenueList()">Another location</button>
+          <button class="button button-balanced" ng-click="recommendatoinSelected()">I want to go here.</button>
+        </div>
+      </div>
+
+    </form>
+
+  </ion-pane>
+</ion-modal-view>
+
+
+
+
+<!--<ion-view>-->
+  <!--<ion-header-bar class="bar-positive bar-header animated fadeInUpBig fix-buttons" style="background:#0767ED;">-->
+      <!--<a class="button" ng-click="closeModalOffer()">Back</a>-->
+     <!--<h1 class="title">Recommendation</h1>-->
+
+  <!--</ion-header-bar>-->
+
+  <!--<ion-pane>-->
+    <!--<div class="row responsive-sm">-->
+     <!--<div class="col">-->
+       <!--<div class="row responsive-sm">-->
+         <!--<div class="col"><div class="artical-set_Recommendation" style="background: url({{offer.cover}}) no-repeat center center;"></div>-->
+         <!--<div class="button-bar animated fadeInUpBig" style ="border-style: solid; border-color: black;" >-->
+           <!--<button class="button button-calm">About</button>-->
+           <!--<button class="button button-positive">Offers</button>-->
+         <!--</div>-->
+          <!--<h2 style="font-size:175%;"> {{offer.name}}</h2>-->
+          <!--<ion-scroll direction="y" style="position:absolute; height:35%; width:90%;" >-->
+            <!--<p>  {{offer.info}}</p>-->
+          <!--</ion-scroll>-->
+         <!--</div>-->
+         <!--<div class="col">-->
+       <!--</div>-->
+       <!--</div>-->
+     <!--</div>-->
+
+     <!--</div>-->
+     <!--<div class="bar bar-footer">-->
+       <!--<div class= "button-bar animated fadeInUpBig" style="position:absolute; left:4%; width:91%;"  >-->
+         <!--<button class="button button-assertive ">Another location</button>-->
+         <!--<button class="button button-balanced" ng-click="recommendatoinSelected()">I want to go here.</button>-->
+       <!--</div>-->
+     <!--</div>-->
+
+
+<!--</ion-pane>-->

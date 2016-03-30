@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Buddify</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_create_account">CreateAccount</string>
+    <string name="title_activity_homescreen">homescreen</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="facebook_app_id">1718999851647453</string>
+    <string name="title_activity_sign_in">Sign in</string>
+
+    <string name="title_activity_home">Home</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+=======
+    <string name="recom_venue_name">Rockhaus</string>
+    <string name="recom_buttonText_anotherPlace">Another Places</string>
+    <string name="recom_buttonText_goThere">I want go to there!</string>
+    <string name="recom_title">Our Recommendation</string>
+    <string name="recom_venue_text">Das Rockhouse Salzburg hat sich, seinem Motto "Andere Töne - am Puls der Zeit" entsprechend, seit seiner Eröffnung 1993 zu einem der besten und beliebtesten Musikclubs Europas etabliert. Auch architektonisch ist das "Haus der Musik" eine interessante Location, in der die historischen Gewölbe mit moderner Architektur gelungen kombiniert sind.
+Das Programm des ganzjährigen "Kulturversorgers" ist mit über 250 Veranstaltungen - Konzerte, Clubbings, Workshops u.v.m. - sehr dicht und abwechslungsreich. Die musikalische Palette im Rockhouse in Salzburg reicht von Alternative, Pop, Rock, Jazz, Folk, Blues über Metal bis hin zu HipHop und Reggae u.v.a.m.!
+Internationale und nationale Stars und Newcomer - auch abseits des Mainstreams - bespielen sowohl die große Bühne des Hauses, als auch die kleinere Club-Bühne, die sich in der Rockhouse Bar befindet. Die Rockhouse Bar zählt zu einer der innovativsten Bars der Stadt Salzburg und ist auch an veranstaltungsfreien Tagen geöffnet. Egal ob Sie eine Live-Band erleben, bei einem Clubbing, einer Aftershow Party oder einfach das Nachtleben genießen möchten: WELCOME TO THE CLUB! </string>
+>>>>>>> origin/master
+
+</resources>
